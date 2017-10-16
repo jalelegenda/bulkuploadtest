@@ -1,4 +1,4 @@
-"""Menus for the DFFC Bulk upload CSV generator"""
+"""This script will generate a CSV document for bulk upload feature testing"""
 
 STEPS =\
 [
@@ -16,11 +16,12 @@ STEPS =\
     },
 
     {
-        "Heading": "Select the plate repeating pattern:",
+        "Heading": "Enter account numbers to use "+\
+              "(leave empty to end; if no ID is entered a random ID will be used):",
         "Type": "INSERT",
         "Options": {},
         "Data": [],
-        "Validate": r'[a-zA-Z]{2,4}[0-9]{2,4}$'
+        "Validate": r'1[0-9]{9}$'
     },
 
     {
